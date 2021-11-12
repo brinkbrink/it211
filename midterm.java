@@ -5,7 +5,6 @@ import java.util.Random;
 
 public class midterm {
 
-	
 //	Create a program that plays a guessing game. 
 //	The program will secretly select a number between 
 //	1 and 100 (or a 1 and 1000 if you want it to be a little 
