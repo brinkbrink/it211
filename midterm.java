@@ -27,11 +27,7 @@ public class midterm {
 		while (points != 0) {
 			System.out.println("Enter your guess: ");
 			int guess = scan.nextInt();
-			if (guess == programNum) {
-				System.out.println("You win!");
-				break;
-			} 
-			else if (guess < programNum) {
+			if (guess < programNum) {
 				points --;
 				System.out.println("Too low!");
 			}
@@ -39,6 +35,10 @@ public class midterm {
 				points --;
 				System.out.println("Too high!");
 			}
+			else {
+				System.out.println("You win!");
+				break;
+			} 
 		} // end while
 		System.out.println("Game is over! The secret number is: " + programNum + " and your score is: " + points + ".");
 	}
