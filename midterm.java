@@ -16,8 +16,6 @@ public class midterm {
 //	guess, or a correct guess,  the program prints out the secret 
 //	number and the score. This program will test your use of Loops 
 //	and branches as well as basic prompts, inputs and assignments. 
-//	You can work on the program until it works--there is no 
-//	time limit despite the due date.
 	
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
