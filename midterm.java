@@ -39,9 +39,6 @@ public class midterm {
 				points --;
 				System.out.println("Too high!");
 			}
-			else {
-				System.out.println("You lose!");
-			}
 		} // end while
 		System.out.println("Game is over! The secret number is: " + programNum + " and your score is: " + points + ".");
 	}
