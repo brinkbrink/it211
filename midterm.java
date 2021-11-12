@@ -21,26 +21,26 @@ public class midterm {
 		Scanner scan = new Scanner(System.in);
 		Random rand = new Random();
 		
-		int programNum = rand.nextInt(100) + 1;
-		int points = 10;
+		int programNum = rand.nextInt(100) + 1; // program picks random num from 1-100
+		int points = 10; // user gets 10 guesses, guesses = points
 		
-		while (points != 0) {
+		while (points != 0) { // while user still has guesses available
 			System.out.println("Enter your guess: ");
 			int guess = scan.nextInt();
-			if (guess < programNum) {
+			if (guess < programNum) { // if guess is too low
 				points --;
 				System.out.println("Too low!");
 			}
-			else if (guess > programNum) {
+			else if (guess > programNum) { // if guess is too high
 				points --;
 				System.out.println("Too high!");
 			}
 			else {
-				System.out.println("You win!");
+				System.out.println("You win!"); // if guess is correct
 				break;
 			} 
 		} // end while
-		System.out.println("Game is over! The secret number is: " + programNum + " and your score is: " + points + ".");
+		System.out.println("Game is over! The secret number is: " + programNum + " and your score is: " + points + "."); // after correct or last guess
 	}
 
 }
